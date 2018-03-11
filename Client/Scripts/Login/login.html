@@ -1,0 +1,18 @@
+<div ng-controller="loginController as ctrl">
+	<md-content layout-padding>
+		<div>
+			<md-input-container layout="row">
+				<label>Username</label>
+				<input ng-model="ctrl.username">
+			</md-input-container>
+
+			<md-input-container layout="row">
+				<label>Password</label>
+				<input ng-model="ctrl.password" type="password" ng-keyup="$event.keyCode == 13 && ctrl.loginClick()">
+			</md-input-container>
+
+			<md-button class="md-raised md-primary" ng-click="ctrl.loginClick()">Login</md-button>
+		</div>
+	</md-content>
+
+</div>

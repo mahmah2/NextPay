@@ -1,0 +1,51 @@
+<div ng-controller="paymentController as ctrl">
+    <md-content layout-padding>
+        <form name="userForm">
+            <div>
+                <md-input-container  class="md-block" flex-gt-sm>
+                    <label>BSB</label>
+                    <input name="inputBSB" ng-model="ctrl.PayInfo.BSB" ng-pattern="/^[0-9]{6}$/"/>
+
+                    <!--<div class="hint" ng-if="true">######</div>-->
+
+                    <div ng-messages="userForm.inputBSB.$error" ng-if="true">
+                        <div ng-message="pattern">###### - Please enter a valid BSB.</div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container  class="md-block" flex-gt-sm>
+                    <label>Account Number</label>
+                    <input name="inputAccountNumber" ng-model="ctrl.PayInfo.AccountNumber" ng-pattern="/^[0-9]{8}$/"/>
+
+                    <!--<div class="hint" ng-if="true">########</div>-->
+
+                    <div ng-messages="userForm.inputAccountNumber.$error" ng-if="true">
+                        <div ng-message="pattern">######## - Please enter a valid Account Number.</div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container  class="md-block" flex-gt-sm>
+                    <label>Account Name</label>
+                    <input name="inputAccountName" ng-model="ctrl.PayInfo.AccountName" ng-pattern="/^[\w\s]{1,20}$/"/>
+
+                    <!--<div class="hint" ng-if="true">########</div>-->
+
+                    <div ng-messages="userForm.inputAccountName.$error" ng-if="true">
+                        <div ng-message="pattern">Please enter a valid Account Name.</div>
+                    </div>
+                </md-input-container>
+
+
+                <md-input-container class="md-icon-float md-icon-right md-block">
+                    <label>Payment Amount</label>
+                    <!--<md-icon md-svg-src="img/card.svg"></md-icon>-->
+                    <input ng-model="ctrl.PayInfo.PaymentAmount" type="number" step="0.01">
+                    <!--<md-icon md-svg-src="img/dollar.svg"></md-icon>-->
+                </md-input-container>
+
+                <md-button class="md-raised md-primary" ng-click="ctrl.payClick()">Pay</md-button>
+            </div>
+        </form>
+    </md-content>
+
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "Next Pay Test",
+  "description": "Next Pay Test Project",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "BC",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.6",
+    "angular-ui-router": "^1.0.6",
+    "angular-material": "^1.1.5"
+  }
+}
