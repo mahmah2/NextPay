@@ -38,13 +38,14 @@ namespace NP.Controllers
 
         // POST api/values
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody]PaymentInfo value)
+        public async Task<IActionResult> Post(
+            [FromBody]PaymentInfo value)
         {
             try
             {
-                var fileName = Path.Combine(Startup.Configuration[Constants.KeyCurrentFolder]
-                    , Startup.Configuration[Constants.KeyPaymentOutputFolderName]
-                    , Startup.Configuration[Constants.KeyPaymentOutputFileName]);
+                var fileName = Path.Combine(Variables.CurrentFolder
+                    , Variables.PaymentOutputFolder
+                    , Variables.PaymentOutputFileName);
 
                 var paymentBusiness = new PaymentBusiness();
 

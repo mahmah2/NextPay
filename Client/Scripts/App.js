@@ -34,9 +34,12 @@ NP.controller('NPController', ['$scope', '$rootScope', '$state', '$mdToast',
 
 		var vm = this;
 
+    	//Global variables
+    	$rootScope.ServerURL = 'http://localhost:51432';
+
+
 		vm.AppName = 'NP';
 		vm.Busy = false;
-
 
         $rootScope.$on('NP.OnBusy', function (ev) {
             vm.Busy = true;

@@ -13,6 +13,7 @@ angular.module('NP.controllers').
 		vm.payClick = function () {
 			
 			$rootScope.$emit('NP.OnBusy');
+
 			paymentService.savePayment(vm.PayInfo).then(
 					function success(data)
 					{

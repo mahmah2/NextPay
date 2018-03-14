@@ -7,8 +7,6 @@ namespace NP
 {
     public static class Constants
     {
-        public static readonly string KeyPaymentOutputFolderName = "PaymentOutputFolderName";
-        public static readonly string KeyPaymentOutputFileName = "PaymentsListFileName";
-        public static readonly string KeyCurrentFolder = "CurrentFolder";
+        //public static readonly string KeyCurrentFolder = "CurrentFolder";
     }
 }

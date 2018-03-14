@@ -9,6 +9,11 @@ angular.module('NP.services')
 			self.savePayment = function (paymentInfo) {
 			
 				var deferred = $q.defer();
+
+				console.log(paymentInfo);
+
+				console.log(JSON.stringify(paymentInfo));
+
 							
 	            $http.post($rootScope.ServerURL + "/api/payment"
 			                //, JSON.stringify({Email: userName,})

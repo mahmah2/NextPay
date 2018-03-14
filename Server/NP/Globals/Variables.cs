@@ -7,7 +7,8 @@ namespace NP
 {
     public static class Variables
     {
-        public static string DefaultPaymentOutputFolder = "PaymentsStorage";
-        public static string DefaultPaymentOutputFileName = "Payments.txt";
+        public static string CurrentFolder = "";
+        public static string PaymentOutputFolder = "PaymentsStorage";
+        public static string PaymentOutputFileName = "Payments.txt";
     }
 }

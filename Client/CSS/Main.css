@@ -44,3 +44,16 @@ table tr:nth-child(even) {
     bottom: 7px;
     opacity: 1;
 }
+
+
+md-toast.md-success-toast-theme {
+    .md-toast-content {
+        background-color: green;
+    }
+}
+
+md-toast.md-error-toast-theme {
+    .md-toast-content {
+        background-color: red;
+    }
+}

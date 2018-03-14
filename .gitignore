@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Client/BC
+/Server/.vs
+/Server/NP/bin/Debug/netcoreapp2.0
+/Server/NP/obj/Debug/netcoreapp2.0
+/Server/NP/obj
+/test
+/backup
+/Server/NPUnitTest/bin/Debug
+/Server/NPUnitTest/obj/Debug/netcoreapp2.0
+/Server/NPUnitTest/obj
+/Server/packages
