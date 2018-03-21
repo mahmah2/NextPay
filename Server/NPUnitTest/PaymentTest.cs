@@ -24,7 +24,7 @@ namespace NPUnitTest
                 File.Delete(outputFile);
 
             //run controller action
-            var controller = new NP.Controllers.PaymentController(new NP.OutputPayment.FileOutputPayment());
+            var controller = new NP.Controllers.V1.PaymentController(new NP.OutputPayment.FileOutputPayment());
             var originalPayment = new NP.Model.PaymentInfo()
             {
                 AccountName = "a",

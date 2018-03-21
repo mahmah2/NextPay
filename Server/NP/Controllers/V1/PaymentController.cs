@@ -11,9 +11,10 @@ using NP.Business;
 using System.Net.Http;
 using System.Net;
 
-namespace NP.Controllers
+namespace NP.Controllers.V1
 {
-    [Route("api/Payment")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/Payment")]
     public class PaymentController : Controller
     {
         private IOutputPayment _output;

@@ -54,6 +54,7 @@ namespace NP
             //    //opt.SerializerSettings.Culture = new CultureInfo("en-US", true);
             //    //opt.SerializerSettings.FloatParseHandling = FloatParseHandling.Decimal;
             //});
+            services.AddApiVersioning();
 
             services.AddTransient<IOutputPayment, FileOutputPayment>();
 
